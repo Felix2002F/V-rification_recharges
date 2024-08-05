@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vérifie ton recharge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .note {
+            font-size: 0.9em;
+            color: #888;
+        }
+        .info {
+            margin-top: 40px;
+        }
+        .info h2 {
+            margin-top: 0;
+        }
+        .info p {
+            margin: 5px 0;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            text-align: center;
+        }
+        .footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .message {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Vérifie ton recharge</h1>
+        <form id="rechargeForm">
+            <div class="form-group">
+                <label for="nom-recharge">Nom du recharge*</label>
+                <input type="text" id="nom-recharge" name="nom-recharge" required>
+            </div>
+            <div class="form-group">
+                <label for="montant">Montant*</label>
+                <input type="number" id="montant" name="montant" required>
+            </div>
+            <div class="form-group">
+                <label for="code-recharge">Code du recharge*</label>
+                <input type="text" id="code-recharge" name="code-recharge" required>
+            </div>
+            <div class="form-group">
+                <label for="cachez-code">
